@@ -99,16 +99,16 @@ public class ImplementedAPI extends EmptyAPI {
     public synchronized int RcvBuf(byte[] ByteData, int nLength) {
 		if(socket == null) return 0;
         //byte[] data;
-		/*try {
+		try {
             dIn = new DataInputStream(socket.getInputStream());
 			dIn.read(ByteData);
 		} catch(IOException ex) {
 			logger.error("Error reading data from socket!", ex);
 			closeport();
 			return 1; // EXPERIMENTAL
-		}*/
+		}
 		//System.arraycopy(data, 0, ByteData, 0, data.length);
-		System.arraycopy("00\r\n".getBytes(), 0, ByteData, 0, 4);
+		//System.arraycopy("00\r\n".getBytes(), 0, ByteData, 0, 4);
         return 1;
     }
 

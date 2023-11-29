@@ -45,12 +45,6 @@ cd ..
 ./downloads/innoextract ./downloads/*.exe
 ```
 
-Now use innoextract to extract the executable.
-```bash
-cd ..
-./downloads/innoextract downloads/*.exe
-```
-
 ### Download external libs
 Download `Byte Buddy` files:
 * [Byte Buddy](https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy) to `app/app/` folder.
